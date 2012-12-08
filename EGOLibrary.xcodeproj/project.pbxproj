@@ -10,7 +10,7 @@
 		3CF83AE9166DF319005ED593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF83AE8166DF319005ED593 /* Foundation.framework */; };
 		3CF83AEE166DF319005ED593 /* EGOLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3CF83AED166DF319005ED593 /* EGOLibrary.h */; };
 		3CF83AF0166DF319005ED593 /* EGOLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF83AEF166DF319005ED593 /* EGOLibrary.m */; };
-		3CF83B07166DF38A005ED593 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF83AFB166DF38A005ED593 /* EGOCache.m */; };
+		3CF83B07166DF38A005ED593 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF83AFB166DF38A005ED593 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		3CF83B08166DF38A005ED593 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF83AFE166DF38A005ED593 /* EGOImageButton.m */; };
 		3CF83B09166DF38A005ED593 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF83B01166DF38A005ED593 /* EGOImageLoadConnection.m */; };
 		3CF83B0A166DF38A005ED593 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF83B03166DF38A005ED593 /* EGOImageLoader.m */; };
@@ -214,6 +214,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -239,6 +240,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
@@ -255,6 +257,7 @@
 		3CF83AF4166DF319005ED593 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/EGOLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EGOLibrary/EGOLibrary-Prefix.pch";
@@ -267,6 +270,7 @@
 		3CF83AF5166DF319005ED593 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/EGOLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EGOLibrary/EGOLibrary-Prefix.pch";
